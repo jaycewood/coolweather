@@ -179,7 +179,7 @@ public class ChooseAreaFragment extends Fragment {
      */
     private void qurryFromServer(String address, final String type) {
         showProgressDialog();
-//        Log.d("qurryFromServer", "url: " +  address);
+        Log.d("qurryFromServer", "url: " +  address);
         HttpUtil.sendOkHttpRequest(address, new Callback() {
             @Override
             public void onFailure(@NotNull Call call, @NotNull IOException e) {
